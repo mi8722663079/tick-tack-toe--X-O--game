@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vaniila js for X O</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main-grid">
+        <div class="player-turn">
+          <i
+            class="Picon fa-solid fa-x turquoise"
+            style="margin-right: 15px"
+          ></i>
+          <p class="current turquoise">Player 1, you are up!</p>
+        </div>
+        <div class="menu" data-id="menu1">
+          <button class="action" data-id="Actions">
+            Actions
+            <i class="fa-solid fa-chevron-down" style="margin-left: 5px"></i>
+          </button>
+          <div class="items border hidden" data-id="menu-popover">
+            <button data-id="reset-btn">Reset</button>
+            <button data-id="newround-btn">New Round</button>
+          </div>
+        </div>
+        <div id="1" class="game-box shadow" data-id="box"></div>
+        <div id="2" class="game-box shadow" data-id="box"></div>
+        <div id="3" class="game-box shadow" data-id="box"></div>
+        <div id="4" class="game-box shadow" data-id="box"></div>
+        <div id="5" class="game-box shadow" data-id="box"></div>
+        <div id="6" class="game-box shadow" data-id="box"></div>
+        <div id="7" class="game-box shadow" data-id="box"></div>
+        <div id="8" class="game-box shadow" data-id="box"></div>
+        <div id="9" class="game-box shadow" data-id="box"></div>
+        <div class="score shadow" style="background-color: #2cc4bf">
+          Player 1 <span data-id="p1-stats">0 wins</span>
+        </div>
+        <div class="score shadow" style="background-color: #d3d3d3">
+          Ties <span data-id="tie-stats">0 ties</span>
+        </div>
+        <div class="score shadow" style="background-color: #f2b147">
+          Player 2 <span data-id="p2-stats">0 wins</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Originally created by <a href="" style="color: #f2b147">@megfdev</a> and
+        <a href="" style="color: #f2b147">@Ivan00sto</a>
+      </p>
+      <p style="padding-top: 10px">
+        Refactored by <a href="" style="color: #2cc4bf">Mohamed mourad</a>
+      </p>
+    </footer>
+    <div class="winner-sc hidden">
+      <div class="winner">
+        <p class="win1">Player 1 wins!</p>
+        <button class="again-btn">Play again</button>
+      </div>
+    </div>
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
