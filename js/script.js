@@ -14,7 +14,7 @@ function init() {
     view.winner([]);
     state.newRound();
     view.turnIndicator(state.game.currentPlayer);
-    view.$.item1.classList.toggle("hidden");
+    view.$.item1.classList.remove("hidden");
   });
 
   view.bindResetRound((event) => {
@@ -22,7 +22,7 @@ function init() {
     state.reset();
     view.clearMoves();
     view.turnIndicator(state.game.currentPlayer);
-    view.$.item1.classList.toggle("hidden");
+    view.$.item1.classList.remove("hidden");
   });
 
   view.bindPlayerMoves((square) => {
