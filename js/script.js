@@ -22,7 +22,6 @@ function init() {
     state.reset();
     view.clearMoves();
     view.turnIndicator(state.game.currentPlayer);
-    view.$.item1.classList.remove("hidden");
   });
 
   view.bindPlayerMoves((square) => {
